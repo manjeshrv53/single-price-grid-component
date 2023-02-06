@@ -102,6 +102,7 @@ video {
   background-color: var(--white);
   border-radius: 0.5rem;
   box-shadow: 0 1.5rem 3rem rgba(0, 81, 171, 0.15);
+  overflow: hidden;
 }
 
 .card-message,
@@ -182,4 +183,53 @@ video {
 /* Width */
 .w-100 {
   width: 100%;
+}
+
+/**************************************/
+/* Responsive styling */
+/**************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    border-radius: 0.8rem;
+    max-width: 63.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .h1 {
+    font-size: 2.4rem;
+  }
+
+  .h3 {
+    font-size: 1.8rem;
+  }
+
+  .card-message,
+  .card-pricing,
+  .card-que {
+    padding: 4rem;
+  }
+
+  .card-message {
+    font-size: 1.6rem;
+    grid-column: 1 / -1;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
